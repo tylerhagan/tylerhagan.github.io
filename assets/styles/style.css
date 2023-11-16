@@ -1,0 +1,208 @@
+/*  tylerhagan.co.uk  */
+/* Var */
+:root {
+    --animation-primary: all .3s cubic-bezier(.7, 0, .3, 1);
+    --bg-grey: #999d9e;
+    --petrol-blue: #106a9d;
+}
+html, body { background: #fff; scroll-behavior: smooth; }
+
+/* Typography */
+@font-face {
+    font-family: 'Satoshi-Bold';
+    src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+         url('../fonts/Satoshi-Bold.woff') format('woff'),
+         url('../fonts/Satoshi-Bold.ttf') format('truetype');
+         font-weight: 700;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Erode';
+    src: url('../fonts/Erode-Regular.woff2') format('woff2'),
+         url('../fonts/Erode-Regular.woff') format('woff'),
+         url('../fonts/Erode-Regular.ttf') format('truetype');
+         font-weight: 400;
+         font-display: swap;
+         font-style: normal;
+  }
+  @font-face {
+    font-family: 'Erode';
+    src: url('../fonts/Erode-Semibold.woff2') format('woff2'),
+         url('../fonts/Erode-Semibold.woff') format('woff'),
+         url('../fonts/Erode-Semibold.ttf') format('truetype');
+         font-weight: 600;
+         font-display: swap;
+         font-style: normal;
+  }
+
+a { font-weight: 600; }
+.btn { border-radius: 1rem; padding: .5rem .75rem; height: auto; color: var(--petrol-blue); border-color: var(--petrol-blue); }
+.btn.btn-link.active, .btn.btn-link:active, .btn.btn-link:focus, .btn.btn-link:hover { color: var(--petrol-blue); }
+.btn.btn-primary { background: var(--petrol-blue); }
+.btn.btn-sm { padding: 0.05rem 0.6rem; }
+p, span, em { font-family: 'Erode', Georgia, 'Times New Roman', Times, serif; font-size: 1rem; }
+.navbar * { font-weight: 600; font-size: 1.2rem;}
+.navbar *, h1, h2, h3, h4, h5, h6, .heading { font-family: 'Satoshi-Bold', Arial, Helvetica, sans-serif; }
+.header a[href^="http"]::after,
+.top a[href^="http"]::after,
+.header a[href^="https://"]::after,
+.main a[href^="https://"]::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  background-image: url("../img/icon-external.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
+ul.unstyled { list-style: none; margin-left: 0; }
+ul.unstyled li { margin-top: 0.1rem; }
+.font-sans { font-family: 'Satoshi-Bold', Arial, Helvetica, sans-serif; font-size: inherit;}
+.font-serif { font-family: 'Erode', Georgia, 'Times New Roman', Times, serif; font-size: inherit; }
+dl { font-size: 1rem; }
+dl > dd { font-family: 'Erode', Georgia, 'Times New Roman', Times, serif; font-size: inherit; margin-bottom: 0.4rem; }
+
+/* Navigation */
+.top { background: var(--bg-grey); }
+.navbar .logo { height: 62px; }
+.top .column { padding: 1.5rem 0; }
+.navbar a.btn { border-radius: .8rem; padding: .5rem .8rem; height: auto; color: #fff; }
+.navbar a.btn:hover { background: rgba(255, 255, 255, 0.4); }
+
+/* Hero */
+.header { background: var(--bg-grey); }
+.hero .hero-body { margin: 3rem 0; }
+.hero .hero-body h1 { font-size: 3rem; }
+.hero .hero-body p { font-size: 2rem; }
+.hero .hero-body a { color: var(--petrol-blue); }
+
+/* Code by Interaction */
+.code-by {
+    background: #fff;
+    border-radius: 2rem;
+    bottom: -40px;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    right: 0;
+    font-weight: 600;
+    cursor: default;
+    overflow: hidden;
+    transition: var(--animation-primary);
+ }
+.code-by:hover {
+    transform: rotate(-2deg);
+    /* box-shadow: 2px 2px 3px 0 rgba(0,0,0,.2); */
+}
+
+.code-by .code-contained {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.code-by .intro-code {
+    transform: translateX(0) rotate(0.001deg);
+    position: relative;
+    display: inline-block;
+    transition: var(--animation-primary);
+}
+
+.code-by:hover .intro-code {
+    transform: translateX(-3.1em) rotate(0.001deg);
+}
+
+.code-by .credit {
+    transform: translateX(0) rotate(0.001deg);
+    position: relative;
+    display: inline-block;
+    transition: var(--animation-primary);
+}
+
+.code-by:hover .credit {
+    padding-right: .2em;
+    transform: translateX(-3.1em) rotate(0.001deg);
+}
+
+.code-by .hagan {
+    position: absolute;
+    opacity: 1;
+    transition: var(--animation-primary);
+    top: 0;
+    left: 0;
+    transform: translateX(2.25em);
+    white-space: nowrap;
+}
+
+/* Sections */
+section:not([class]) { margin-top: 3rem; }
+section#breadcrumbs { margin-top: 2rem; }
+main { border-top: 1px solid #CCC;}
+.breadcrumbs { 
+    margin-top: 2rem;
+}
+.section-header {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    width: 100%;
+    justify-content: end;
+    align-items: end;
+}
+.section-header h2 { 
+    color: var(--bg-grey);
+    margin-bottom: 0;
+}
+.heading { margin-bottom: 2rem; }
+
+/** Case Study **/
+#case-study .column .heading {
+    border-bottom: 1px solid var(--bg-grey);
+}
+#case-study .column h3 {
+    color: var(--bg-grey);
+}
+#case-study .column h3 > em { font-size: inherit; }
+#case-study .column h4 { margin-top: 2rem; border-bottom: 1px solid var(--bg-grey); padding-bottom: 1rem; }
+
+/* Projects */
+.project { padding-top: 2rem; margin-top: 2rem; border-top: 1px solid var(--bg-grey) }
+.project .media { margin-top: 1rem; }
+.project .media p { margin: 1rem 0 0; }
+.project .chip .avatar {
+    background-color: rgba(255,255,255,.6);
+    border:1px solid #CCC;
+}
+
+/* Footer */
+
+footer { 
+    margin-top: 6rem;
+    padding: 3rem 0 2rem;
+}
+footer .logo { width: 64px; }
+footer h4 { font-size: 3rem; margin: 3rem 0 4rem; }
+footer p { margin: 0; }
+footer svg {
+    stroke: var(--bg-grey);
+    overflow: hidden;
+    vertical-align: middle;
+}
+footer a:hover svg {
+    stroke: var(--petrol-blue);
+}
+footer .bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .footer-grid {
+    display: grid;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    grid-column-gap: 16px;
+    grid-template-columns: repeat(3,1fr)
+}
