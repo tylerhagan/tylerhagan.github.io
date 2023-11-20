@@ -4,29 +4,31 @@
         <meta charset="utf-8">
         <link rel="icon" href="favicon.svg" type="image/svg+xml">
         <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="theme-color" content="#111111" />
-        <title>Tyler Hagan | Portfolio</title>
+        <meta name="theme-color" content="#303742" />
+        <title>Tyler Hagan | Case Study</title>
         <link rel="stylesheet" href="assets/styles/spectre.min.css">
         <link rel="stylesheet" href="assets/styles/style.css">
     </head>
     <body>
-        <div class="top" id="top">
-            <div class="container grid-xl">
-                <div class="columns">
-                    <div class="column col-12">
-                        <header class="navbar">
-                            <section class="navbar-section">
-                                <a href="index.html#work" class="btn btn-link">Work</a>
-                                <a href="about.html" class="btn btn-link">About</a>
-                            </section>
-                            <section class="navbar-center">
-                                <a href="index.html"><img src="assets/img/th-logomark-dark.svg" class="logo" alt="Tyler Hagan" title="Tyler Hagan"></a>
-                            </section>
-                            <section class="navbar-section">
-                                <a class="btn btn-link" href="https://www.linkedin.com/in/tylerhagan/" target="_blank" rel="nofollow">LinkedIn</a>
-                                <a class="btn btn-link" href="https://www.tylerhagan.co.uk/cv.pdf" class="btn btn-link">CV</a>
-                            </section>
-                        </header>
+        <div class="backdrop">
+            <div class="top" id="top">
+                <div class="container grid-xl">
+                    <div class="columns">
+                        <div class="column col-12">
+                            <header class="navbar">
+                                <section class="navbar-section">
+                                    <a href="index.html#work" class="btn btn-link">Work</a>
+                                    <a href="about.html" class="btn btn-link">About</a>
+                                </section>
+                                <section class="navbar-center">
+                                    <a href="index.html"><img src="assets/img/th-logomark-dark.svg" class="logo" alt="Tyler Hagan" title="Tyler Hagan"></a>
+                                </section>
+                                <section class="navbar-section">
+                                    <a class="btn btn-link" href="https://www.linkedin.com/in/tylerhagan/" target="_blank" rel="nofollow noopener">LinkedIn</a>
+                                    <a class="btn btn-link" href="https://www.tylerhagan.co.uk/cv.pdf" class="btn btn-link">CV</a>
+                                </section>
+                            </header>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -34,7 +36,7 @@
         <main>
             <div class="container grid-lg">
                 <section id="breadcrumbs">
-                    <div class="columns col-gapless">
+                    <div class="columns">
                         <div class="column col-12">
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item">
@@ -48,15 +50,15 @@
                     </div>
                 </section>
             </div>
+            <section id="case-study">
             <div class="container grid-lg">
-                <section id="case-study">
                     <div class="columns section">
                         <div class="column col-9">
                             <div class="heading">
                                 <h2>Case Study</h2>
                             </div>
                             <h1>EIGENSONNE App</h1>
-                            <h3>A mobile app that provides the means to monitor a photovoltaic system, and serve as the basis for maintaining a <em><strong>long term relationship</strong></em> between the company and the customer</h3>
+                            <h3>A mobile app that provides the means to monitor a <dfn class="tooltip tooltip-right" data-tooltip="Solar Panel System">photovoltaic system</dfn>, and serve as the basis for maintaining a <em><strong>long term relationship</strong></em> between the company and the customer</h3>
                         </div>
                         <div class="column col-3">
                             <div class="heading">
@@ -77,17 +79,83 @@
                         </div>
                         <div class="column col-12">
                             <h4>Overview</h4>
-                            <p>Content</p>
-                            <h4>Research</h4>
-                            <p>Content</p>
-                            <h4>Design</h4>
-                            <p>Content</p>
-                            <h4>Results</h4>
-                            <p>Content</p>
+                            <div class="columns">
+                                <div class="column col-6">
+                                    <h5>Problem</h5>
+                                    <p>After installation EIGENSONNE would usually say goodbye to the customer. How can they better establish an ongoing relationship with them?</p>
+                                </div>
+                                <div class="column col-6">
+                                    <h5>Outcome</h5>
+                                    <p>I designed an intuitive & enjoyable proprietary app. Providing energy monitoring, unique data breakdowns, weather and support. Building a component based modular design system, and providing additional feature designs for later feature releases.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </section>
-            </div>
+                </div>
+                <!-- Overview -->
+                <div class="container grid-xl">
+                    <div class="columns overview">
+                        <!-- UX Research -->
+                        <div class="column col-6 ux">
+                            <div class="column col-12 text-center"><h5>UX Research</h5></div>
+                            <div class="columns text-center">
+                                <div class="column col-5 col-mr-auto">
+                                    <strong>Strategy</strong>Business & Goal
+                                </div>
+                            </div>
+                            <div class="columns text-center">
+                                <div class="column col-2"><!-- Spacer --></div>
+                                <div class="column col-5 col-mr-auto" >
+                                    <strong>Brainstorming</strong>Competitive Analysis, Empathise, User Journey
+                                </div>
+                            </div>
+                            <div class="columns text-center">
+                                <div class="column col-2"><!-- Spacer --></div>
+                                <div class="column col-5 col-mx-auto">
+                                    <strong>Approach</strong>Concept, Prototype
+                                </div>
+                            </div>
+                            <div class="columns text-center">
+                                <div class="column col-5 col-ml-auto">
+                                    <strong>Testing</strong>User Testing, Ideation
+                                </div>
+                            </div>
+                        </div>
+                        <!-- UI Design -->
+                        <div class="column col-6 ui">
+                            <div class="column col-12 text-center"><h5>UI Design</h5></div>
+                            <div class="columns text-center">
+                                <div class="column col-6 col-mr-auto">
+                                    Low Fidelity, Mid Fidelity, Ideation, Prototype
+                                </div>
+                            </div>
+                            <div class="columns text-center">
+                                <div class="column col-6 col-mx-auto">
+                                    Usability, Direction & Approach Testing
+                                </div>
+                                <div class="column col-2"><!-- Spacer --></div>
+                            </div>
+                            <div class="columns text-center">
+                                <div class="column col-6 col-ml-auto">
+                                    High Fidelity, HD Prototype, Design System
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container grid-lg">
+                    <div class="column col-12">
+                        <h4>Research</h4>
+                        <h5>Insights</h5>
+                        <p>Content</p>
+                        <h4>Design</h4>
+                        <p>Content</p>
+                        <h4>Results</h4>
+                        <p>Content</p>
+                    </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="bg-dark">
             <div class="container grid-xl">
@@ -98,9 +166,10 @@
                         <p>Made with <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6E998F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></g></svg> by me
                         <br />&copy; 2023 Tyler Hagan. All rights reserved.</p>
                         <div class="footer-grid">
-                            <a href="mailto:tylerhagan@gmail.com"><div class="icon-outer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></g></svg></div></a>
-                            <a href="https://www.linkedin.com/in/tylerhagan/" target="_blank" rel="noopener noreferrer"><div class="icon-outer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></g></svg></div></a>
-                            <a href="https://github.com/tylerhagan" target="_blank" rel="noopener noreferrer"><div class="icon-outer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></g></svg></div></a></div>
+                            <a href="mailto:tylerhagan@gmail.com" title="Email Tyler"><div class="icon-outer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></g></svg></div></a>
+                            <a href="https://www.linkedin.com/in/tylerhagan/" title="View Tyler's LinkedIn Profile" target="_blank" rel="noopener noreferrer"><div class="icon-outer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></g></svg></div></a>
+                            <a href="https://github.com/tylerhagan" title="View Tyler's GitHub Profile" target="_blank" rel="noopener noreferrer"><div class="icon-outer"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></g></svg></div></a>
+                        </div>
                     </div>
                 </div>
             </div>
