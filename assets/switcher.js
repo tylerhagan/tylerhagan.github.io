@@ -1,3 +1,4 @@
+// change and remember the selected style
 if (!localStorage.getItem('styleSet')) {
     localStorage.setItem("styleSet", "flat")
 }
