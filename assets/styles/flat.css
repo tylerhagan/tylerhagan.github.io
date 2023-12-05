@@ -1,0 +1,85 @@
+body.flat {
+    background: #f7f7f7;
+    background-image: none;
+}
+body.flat #top {
+    background: #e5e5e5;
+    border: none;
+}
+body.flat #top .navbar .logo {
+    filter: none;
+}
+body.flat .navbar a.btn {
+    border-radius: 0.15rem;
+    padding: 0.5rem 0.8rem;
+    height: auto;
+    color: #383430;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+body.flat .navbar a.btn:hover { 
+    background: var(--orange);
+    color: #fff;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+ }
+ body.flat .navbar a.btn:focus {
+    box-shadow: none;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+ }
+body.flat .header {
+    background: #e5e5e5;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
+body.flat .header:before { content: none; }
+body.flat .hero .hero-body h1 { color: #222; }
+body.flat .hero .hero-body p { 
+    color: #333;
+}
+body.flat .header a[href^="https://"]::after {
+    background-image: url(../img/icon-external.svg);
+}
+body.flat#about .header,
+body.flat#case-study .header,
+body.flat main { 
+    background: #f7f7f7;
+}
+body.flat .code-by {
+    background: #fff;
+    color: #222;
+}
+body.flat .breadcrumb {
+    margin-top: 1rem;
+}
+body.flat .breadcrumb .breadcrumb-item span {
+    color: #333;
+}
+body.flat .btn { box-shadow: none; border: none; }
+body.flat .code-by:hover {
+    transform: rotate(-2deg);
+    box-shadow: 8px 8px 0 0 rgba(0,0,0,.4);
+}
+body.flat .project .chip {
+    box-shadow: none; 
+    background: #e1e1e1;
+}
+body.flat .project .media a:hover,
+body.flat a.opener:hover {
+    box-shadow: none;
+    border-color: #333;
+}
+body.flat .orange-block {
+    background: #fff;
+    color: #222;
+}
+body.flat .orange-block a:not(.btn) {
+    color: #222;
+}

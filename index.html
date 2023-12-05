@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-gb">
+<html lang="en-gb" style="background: #e2dedc;">
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -21,11 +21,11 @@
                                     <a href="about.html" class="btn btn-link" title="A little about Tyler">About</a>
                                 </section>
                                 <section class="navbar-center">
-                                    <a href="index.html"><img src="assets/img/th-logomark-dark.svg" class="logo" alt="Tyler Hagan" title="Tyler Hagan"></a>
+                                    <a href="index.html"><img src="assets/img/th-logomark-dark.svg" class="logo" alt="Tyler Hagan" title="Tyler Hagan / Home"></a>
                                 </section>
                                 <section class="navbar-section">
                                     <a class="btn btn-link" href="https://www.linkedin.com/in/tylerhagan/" title="LinkedIn Profile" target="_blank" rel="nofollow noopener">LinkedIn</a>
-                                    <a class="btn btn-link" href="https://www.tylerhagan.co.uk/cv.pdf" title="CV PDF" class="btn btn-link">CV</a>
+                                    <a class="btn btn-link" href="assets/tylerhagan-cv.pdf" title="CV PDF" target="_blank" rel="nofollow noopener" class="btn btn-link">CV</a>
                                 </section>
                             </header>
                         </div>
@@ -36,9 +36,16 @@
                 <div class="container grid-xl p-relative">
                     <div class="hero">
                         <div class="hero-body">
-                            <h1>Tyler Hagan is an England-born Product Designer & Front-End Engineer crafting systems and experiences in Berlin, Germany.</h1>
+                            <h1>Tyler Hagan is an England-born Product Designer & UI/UX Engineer crafting systems and experiences in Berlin, Germany.</h1>
                             <p>Currently pushing the Energiewende at <a href="https://www.eigensonne.de/" target="_blank" rel="nofollow noopener">EIGENSONNE</a>.</p>
                         </div>
+                    </div>
+                    <div class="black-block switcher">
+                        <label class="form-switch">
+                            <input type="checkbox" id="styleSwitch" onclick="change()">
+                            <i class="form-icon"></i>
+                            Change Style
+                        </label>
                     </div>
                     <div class="code-by p-absolute">
                         <span class="code-contained">
@@ -53,9 +60,8 @@
                 <section id="intro">
                     <div class="columns col-gapless">
                         <div class="column col-12">
-                            <h3>Welcome</h3>
-                            <p>I am a product designer & front-end engineer with graphic design and <abbr title="Conversion Rate Optimisation">CRO</abbr> chops. I have a wide range of experience from big tech and agency to startups.
-                            <br />The combination of my passion for design, code and user experience positions me in a unique place in the web, UI and product design worlds.</p>
+                            <h3 class="orange-block">Welcome</h3>
+                            <p>I am a Product Designer & UI/UX Engineer with <abbr title="Conversion Rate Optimisation">CRO</abbr> chops. I have a wide range of experience from big tech and agency to startups. The combination of my passion for code and human-centric design positions me in a unique place in the web, UI and product design worlds.</p>
                             <p>Below you will find an example of my most recent commercial project and employment.</p>
                         </div>
                     </div>
@@ -72,22 +78,24 @@
                         <div class="column col-12 project">
                             <div class="columns">
                                 <div class="column col-5">
-                                    <h4><a href="case-study.html">EIGENSONNE</a> <a class="btn btn-primary btn-sm" href="case-study.html">Case Study</a></h4>
+                                    <h4 class="orange-block"><a href="case-study.html">EIGENSONNE</a> <a class="btn btn-sm" href="case-study.html">Case Study</a></h4>
                                     <p><strong>EIGENSONNE App</strong> worked closely with the product team to design a user centric, solar energy monitoring and long-term retention native application.</p>
                                 </div>
                                 <div class="column col-4">
-                                    <h4>Role</h4>
-                                    <p><strong>UX/UI Engineer</strong> Product Strategy, prototype, end-to-end visual, interaction design and design system.</p>
+                                    <h4 class="black-block">Role</h4>
+                                    <p><strong>UX/UI Engineer</strong> Product Strategy, prototype, end-to-end visual, interaction design and design system. Analytics and tracking ownership.</p>
                                 </div>
                                 <div class="column col-3">
-                                    <h4>Details</h4>
+                                    <h4 class="black-block">Details</h4>
                                     <span class="chip"><figure class="avatar avatar-sm" data-initial="📅"></figure> 2023</span><span class="chip">React Native</span><span class="chip">iOS</span><span class="chip">Android</span><span class="chip">Figma</span><span class="chip">Prototype</span><span class="chip">Analytics</span><span class="chip">User Testing</span>
                                 </div>
                                 <div class="column col-12 media">
                                     <a href="case-study.html" title="EIGENSONNE App Case Study">
-                                        <img src="assets/img/eigenapp-preview.jpg" alt="EIGENSONNE App Preview" class="img-responsive rounded" srcset="assets/img/eigenapp-preview.jpg 1x, assets/img/2x/eigenapp-preview.jpg 2x" />
+                                        <img src="assets/img/eigenapp-preview.jpg" alt="EIGENSONNE App Preview" loading="lazy" class="img-responsive" srcset="assets/img/eigenapp-preview.jpg 1x, assets/img/2x/eigenapp-preview.jpg 2x" />
                                     </a>
-                                    <p class="text-right text-gray">Mockups, Designs, Protoype Previews</p>
+                                    <div class="text-right media-info">
+                                        <span>Alpha: Mockups, Designs, Protoype Previews</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -95,20 +103,74 @@
                         <div class="column col-12 project">
                             <div class="columns">
                                 <div class="column col-5">
-                                    <h4>EIGENSONNE</h4>
-                                    <p><strong>Creative Lead</strong> end-to-end design and development in this brand new start-up. Including corporate identity, print, vehicle livery, marketing materials and UI design. Website development and lead generation optimsation. With the main brand colour being a strong yellow, it was a fun challenge that I took on in a bold way.</p>
+                                    <h4 class="orange-block">EIGENSONNE</h4>
+                                    <p><strong>Creative Lead</strong> end-to-end design and development in this brand new start-up. Including corporate identity, print, vehicle livery, marketing materials and UI design. Website development and lead generation optimsation. Tasked with utilising a strong yellow brand colour, it was a fun challenge that I took on in a bold way.</p>
                                 </div>
                                 <div class="column col-4">
-                                    <h4>Role</h4>
-                                    <p><strong>Senior Front-End Developer</strong> Creative lead, visual, graphic design, ui/ux design and senior front end developer.</p>
+                                    <h4 class="black-block">Role</h4>
+                                    <p><strong>Senior Front-End Developer</strong> Creative lead, visual, graphic design, UI/UX design, conversion optimisation and senior front end developer.</p>
                                 </div>
                                 <div class="column col-3">
-                                    <h4>Details</h4>
-                                    <span class="chip"><figure class="avatar avatar-sm" data-initial="📅"></figure> 2017 - 2022</span><span class="chip">Wordpress</span><span class="chip">GIT</span><span class="chip">Graphic Design</span><span class="chip">Figma</span><span class="chip">Marketing</span><span class="chip">HTML/CSS</span><span class="chip">Javascript</span><span class="chip">PHP</span><span class="chip">Photoshop</span><span class="chip">After Effects</span>
+                                    <h4 class="black-block">Details</h4>
+                                    <span class="chip"><figure class="avatar avatar-sm" data-initial="📅"></figure> 2017 - 2021</span><span class="chip">Wordpress</span><span class="chip">GIT</span><span class="chip">Graphic Design</span><span class="chip">Figma</span><span class="chip">Marketing</span><span class="chip">HTML/CSS</span><span class="chip">Javascript</span><span class="chip">PHP</span><span class="chip">Photoshop</span><span class="chip">Salesforce Community</span>
                                 </div>
                                 <div class="column col-12 media">
-                                    <div style="background:#eef0f3;height:100px;border-radius:.8rem;"></div>
-                                    <p class="text-right text-gray">Screenshots, Prototype, Design Previews</p>
+                                    <img src="assets/img/eigensonne-preview.jpg" alt="EIGENSONNE Work" class="img-responsive" loading="lazy" srcset="assets/img/eigensonne-preview.jpg 1x, assets/img/2x/eigensonne-preview.jpg 2x" />
+                                    <div class="text-right media-info">
+                                        <span>Solar Designer Software, Web, Print, Livery, Stationary</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="brands">
+                    <div class="columns">
+                        <div class="column col-12">
+                            <div class="section-header">
+                                <h2>Brands</h2>
+                            </div>
+                            <p>Some notable brands i've worked with on UI/UX and optimising conversion rates.</p>
+                        </div>
+                        <div class="column col-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/brands/nike-11.svg" class="img-responsive" alt="Nike" title="Nike">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/brands/coca-cola-2021.svg" class="img-responsive" alt="Coca Cola" title="Coca Cola">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-3">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="assets/img/brands/Intel_McAfee_Security.webp" class="img-responsive" alt="Intel Security" title="Intel Security">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-3">
+                            <div class="card">
+                                <div class="card-image">
+                                  <img src="assets/img/brands/news-uk.png" class="img-responsive" alt="News UK" title="News UK"">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-3">
+                            <div class="card">
+                                <div class="card-image">
+                                  <img src="assets/img/brands/News-Corp-Australia-logo.jpeg" class="img-responsive" alt="News Corp Australia" title="News Corp Australia">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column col-3">
+                            <div class="card">
+                                <div class="card-image">
+                                  <img src="assets/img/brands/wsj-logo-big-black.165e51cc.svg" class="img-responsive" alt="The Wall Steet Journal" title="The Wall Steet Journal">
                                 </div>
                             </div>
                         </div>
@@ -133,5 +195,6 @@
                 </div>
             </div>
         </footer>
+        <script src="assets/switcher.js"></script>
     </body>
 </html>

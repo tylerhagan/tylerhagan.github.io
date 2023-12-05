@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-gb">
+<html lang="en-gb" style="background: #e2dedc;">
     <head>
         <meta charset="utf-8">
         <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="assets/styles/spectre.min.css">
         <link rel="stylesheet" href="assets/styles/style.css">
     </head>
-    <body>
+    <body id="case-study">
         <div class="backdrop">
             <div class="top" id="top">
                 <div class="container grid-xl">
@@ -21,11 +21,11 @@
                                     <a href="about.html" class="btn btn-link">About</a>
                                 </section>
                                 <section class="navbar-center">
-                                    <a href="index.html"><img src="assets/img/th-logomark-dark.svg" class="logo" alt="Tyler Hagan" title="Tyler Hagan"></a>
+                                    <a href="index.html"><img src="assets/img/th-logomark-dark.svg" class="logo" alt="Tyler Hagan" title="Tyler Hagan / Home"></a>
                                 </section>
                                 <section class="navbar-section">
                                     <a class="btn btn-link" href="https://www.linkedin.com/in/tylerhagan/" target="_blank" rel="nofollow noopener">LinkedIn</a>
-                                    <a class="btn btn-link" href="https://www.tylerhagan.co.uk/cv.pdf" class="btn btn-link">CV</a>
+                                    <a class="btn btn-link" href="assets/tylerhagan-cv.pdf" title="CV PDF" target="_blank" rel="nofollow noopener" class="btn btn-link">CV</a>
                                 </section>
                             </header>
                         </div>
@@ -33,23 +33,32 @@
                 </div>
             </div>
         </div>
-        <main>
-            <div class="container grid-lg">
+        <div class="header">
+            <div class="container grid-lg p-relative">
                 <section id="breadcrumbs">
                     <div class="columns">
                         <div class="column col-12">
                             <ul class="breadcrumb">
                                 <li class="breadcrumb-item">
-                                  <a href="index.html">Home</a>
+                                <a href="index.html">Home</a>
                                 </li>
                                 <li class="breadcrumb-item">
-                                  <a href="#" onclick="return false;">Case Study</a>
+                                    <span>Case Study</span>
                                 </li>
-                              </ul>
+                            </ul>
                         </div>
+                    </div>
+                    <div class="black-block switcher">
+                        <label class="form-switch">
+                            <input type="checkbox" id="styleSwitch" onclick="change()">
+                            <i class="form-icon"></i>
+                            Change Style
+                        </label>
                     </div>
                 </section>
             </div>
+        </div>
+        <main>
             <section id="case-study">
             <div class="container grid-lg">
                     <div class="columns section">
@@ -82,7 +91,7 @@
                             <div class="columns">
                                 <div class="column col-6">
                                     <h5>Problem</h5>
-                                    <p>After installation EIGENSONNE would usually say goodbye to the customer. How can they better establish an ongoing relationship with them?</p>
+                                    <p>After installation EIGENSONNE would usually say goodbye to the customer. How can they better establish an ongoing relationship with them? How can they offer more value to the customer.</p>
                                 </div>
                                 <div class="column col-6">
                                     <h5>Outcome</h5>
@@ -94,6 +103,7 @@
                 </div>
                 <!-- Overview -->
                 <div class="container grid-xl">
+                    <figure>
                     <div class="columns overview">
                         <!-- UX Research -->
                         <div class="column col-6 ux">
@@ -142,16 +152,67 @@
                             </div>
                         </div>
                     </div>
+                    <figcaption class="text-center">An overview of the project, it's research and design.</figcaption>
+                </figure>
                 </div>
                 <div class="container grid-lg">
                     <div class="column col-12">
                         <h4>Research</h4>
-                        <h5>Insights</h5>
-                        <p>Content</p>
+                        <h5>Understanding</h5>
+                        <p>Through some direct and indirect competitor analysis and colleague interviews we worked out some key factors of what users would want to see in the app and get the most use out of.</p>
+                        <p>Early on we established the aim to differ from the majority of our competitors who catered to more advanced expert users. We would take an approach that would show only the key points of data, in an easily consumable form.</p>
+                        <p>For such a technical product it was important to build trust and confidence in our users, with strong systems health, FAQ and energy flow interface elements. This has the benefit of keeping support requests low.</p>
+                        <h5>Early Prototype Testing</h5>
+                        <p>We did an early test with a relatively high fidelity prototype with a cross-section of approximately 15 existing customers, to determine if our initial aims and assumptions were correct and valuable.</p>
+                        <p>This allowed us to confirm our colour choices made though careful colour theory consideration, and our succinct data approach. Whilst also learning about a few things our users would get huge value from, like a 5 day weather forecast and sunshine hours.</p>
                         <h4>Design</h4>
-                        <p>Content</p>
+                        <h5>Approach</h5>
+                        <figure class="figure float-right text-center ml-2">
+                            <img src="assets/img/eigen-app/sketches.jpg" alt="Early Idea Sketches" align="right" width="300"  class="bordered" />
+                            <figcaption>snippet of early sketches</figcaption>
+                        </figure>
+                        <p>Using key foundation UX/UI principles in mobile design, I designed at a minimum thumb size, rounded, reactive elements for all interactions. To make it intuitive, I used native iOS and Android interface elements and behaviours, like swiping and drawers, rather than "reinventing the wheel". </p>
+                        <p>This means they are easy and satisfying to use as they are well sized, spaced and react on press as a user would expect from a well constructed app interface, whilst preventing any decision fatigue from uncertainty.</p>
+                        <p>Our early testers indicated they loved that they could see how well their system was performing at a glance. They made it clear that everyday usage would be to regularly check the data to see when was the best time for them to use a large appliance like their washing machine.</p>
+                        <figure class="figure text-center">
+                            <a href="#mid-fed" class="bordered opener"><img src="assets/img/eigen-app/mid-fidelity-thumb.jpg" alt="Energy Flow" class="img-responsive bordered"/></a>
+                            <figcaption><img src="assets/img/icon-maximise.svg" width="18" alt="Open Image" /> Medium Fidelity Mockups</figcaption>
+                        </figure>
+                        <p>Leading us to continue with the approach and design of clear simple interface elements, done so with an easily consumable energy flow diagram, large battery charge, and generation and consumption levels on the dashboard/first screen.</p>
+                        <p>Utilising variable speeds of animation in the energy flow diagram to represent the level of energy flows and simple breakdowns of production versus consumption, made for great glance value and easily consumed data.</p>
+                        <figure class="figure text-center">
+                            <img src="assets/img/eigen-app/energy-flow2x.jpg" alt="Energy Flow" class="img-responsive bordered"/>
+                            <figcaption>Early mockups to final energy flow diagram</figcaption>
+                        </figure>
+                        <p>I broke down the key data points in various easy to understand designs. In a way where they interact with associated values in a logical and ideal way. Meaning for example: you can easily see the differences between production and consumption, how they relate to each other and their relevant breakdowns.</p>
+                        <div class="columns">
+                            <div class="column col-6">
+                                <figure class="figure">
+                                    <a href="#dark-prototype" class="bordered opener"><img src="assets/img/eigen-app/early-prototype-dark-thumbnail.png" loading="lazy" class="img-responsive" alt="Dark mode prototype" /></a>
+                                    <figcaption class="text-center"><img src="assets/img/icon-maximise.svg" width="18" alt="Open Image" /> Dark mode dashboard prototype (alpha test)</figcaption>
+                                </figure>
+                            </div>
+                            <div class="column col-6">
+                                <figure class="figure">
+                                    <a href="#light-prototype" class="bordered opener"><img src="assets/img/eigen-app/early-prototype-light-thumbnail.png" loading="lazy" class="img-responsive" alt="Light mode prototype" /></a>
+                                    <figcaption class="text-center"><img src="assets/img/icon-maximise.svg" width="18" alt="Open Image" /> Light mode daily graph prototype (beta test)</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <h5>Colours</h5>
+                        <p>Our colour choices were very deliberate. After some colour psychology research, a teal base was decided upon, as it is associated with calmness, serenity and balance. As not only is it easy on the eyes but unique in this use case and elsewhere used primarily by premium brands such as Tiffany & Co.</p>
+                        <h5>Native</h5>
+                        <p>Utilising my engineering experience, especially with React I worked closely with the development team to insure a delivered design system that could be implemented hassle free &mdash; working well in <abbr title="Library for Native Phone Applications">React Native</abbr>, to allow for speedy and efficient development.</p>
+                        <h5>Design System</h5>
+                        <figure class="figure">
+                            <a href="#design-system" class="bordered opener"><img src="assets/img/design-system.jpg" loading="lazy" class="img-responsive" srcset="assets/img/design-system.jpg 1x, assets/img/2x/design-system.jpg 2x" alt="Design System" /></a>
+                            <figcaption class="text-center"><img src="assets/img/icon-maximise.svg" width="18" alt="Open Image" /> A few examples of the elements in the component based design system.</figcaption>
+                        </figure>
                         <h4>Results</h4>
-                        <p>Content</p>
+                        <p>Taking an iterative approach, with each milestone, we tested. After the first phase of development was completed, another round of testing was completed. From which we have learned a few more things that weren't clear in the first round.</p>
+                        <p>For example our heart icon in the top which was implemented to show that the system was healthy and connection was ok, caused a little confusion.</p>
+                        <p>I then redesigned this to be a more clear indication of a good connection status, whilst keeping the system health aspect to another top level block in the dashboard, as seen in the system verbunden block.</p>
+                        <p>Otherwise we recieved fantastic reviews, and huge confidence boosts from the testers as they have rated the experience higher than the hardware manufacturer and competitors apps. They were all looking forward to being early adopters of the app upon it's initial release in January.</p>
                     </div>
                     </div>
                 </div>
@@ -174,5 +235,18 @@
                 </div>
             </div>
         </footer>
+        <script src="assets/switcher.js"></script>
+        <a href="#!" class="lightbox" id="design-system" title="Design System Full">
+            <div style="background-image:url('assets/img/2x/design-system.jpg')"></div>
+          </a>
+          <a href="#!" class="lightbox" id="light-prototype" title="Light Prototype">
+            <div style="background-image:url('assets/img/eigen-app/early-prototype-light.png')"></div>
+          </a>
+          <a href="#!" class="lightbox" id="dark-prototype" title="Dark Prototype">
+            <div style="background-image:url('assets/img/eigen-app/early-prototype.png')"></div>
+          </a>
+          <a href="#!" class="lightbox" id="mid-fed" title="Medium Fidelity">
+            <div style="background-image:url('assets/img/eigen-app/mid-fidelity.jpg')"></div>
+          </a>
     </body>
 </html>
