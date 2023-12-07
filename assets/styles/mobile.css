@@ -1,0 +1,129 @@
+/* Media Queries */
+@media (min-width: 600px) {
+    .mobile { display: none !important; }
+}
+
+@media (max-width: 600px) {
+    .mobile { display: block !important; }
+    .desktop { display: none !important; }
+
+    /* Navigation */
+    #top {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 995;
+        background: #e2dedc;
+    }
+    body.flat .header {
+        margin-top: 132px;
+    }
+    .header { margin-top: 139px; }
+    header.navbar .navbar-center {
+        margin-left: 1rem;
+    }
+    header.navbar a.btn.dropdown-toggle {
+        padding: .3rem 0.5rem 0.2rem;
+        background: #fff;
+        margin-right: 1rem;
+        background: var(--orange);
+    }
+    header.navbar a.btn.dropdown-toggle:focus {
+        background: #222;
+    }
+    header.navbar .dropdown.dropdown-right .menu {
+        right: 1rem;
+    }
+    .menu .menu-item>a.active, .menu .menu-item>a:active {
+        background: var(--orange);
+        color: #fff;
+    }
+    body.flat .menu .menu-item>a.active, body.flat .menu .menu-item>a:active {
+        background: #e1e1e1;
+        color: #000;
+    }
+    /* Hero */
+    .header .hero .hero-body { margin: 0 !important; }
+    .header .hero { padding: 3rem 0 5rem; }
+    .header .hero .hero-body h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .header .hero .hero-body p {
+        font-size: 1.2rem;
+    }
+    #case-study .header .switcher,
+    #about .header .switcher {
+        right: 5px;
+        left: inherit;
+    }
+    .header .switcher {
+        left: 1rem;
+    }
+    .header .code-by {
+        right: 1rem;
+    }
+    /* Projects */
+    #work .section-header > div.text-small.text-right { display: none; }
+    #work .project .columns .column { width: 100%; }
+    #work .project .columns .column .media-info.text-right {
+        text-align: left;
+    }
+    /* Brands */
+    #brands .columns .column.col-3 { width: 50%; }
+
+    /* About */
+    #about-me .columns .column {
+        width: 100%;
+    }
+    #about-me .columns .column.col-5 {
+        margin-bottom: 1.5rem;
+    }
+    /* Case Study */
+    section#case-study .columns.section .col-9,
+    section#case-study .columns.section .col-3 {
+        width: 100%;
+    }
+    section#case-study .columns.section .col-3 .heading { margin-top: 2rem; }
+    section#case-study .column.col-12 > .columns > .column { width: 100%; }
+    section#case-study .overview { padding: .5rem; }
+    #case-study .overview .ux .col-12 h5, #case-study .overview .ui .col-12 h5 {
+        padding: 1rem .25rem;
+        font-size: 1rem;
+    }
+    #case-study .overview .ux .columns .col-5 {
+        width: 95%;
+        margin: 0;
+    }
+    #case-study .overview .ui .columns .col-2,
+    #case-study .overview .ux .columns .col-2 { 
+        display: none;
+        width: 0;
+        margin: 0;
+    }
+    #case-study .overview .ui .columns .col-6 {
+        width: 100%;
+    }
+    section#case-study figure.figure {
+        width: 100%;
+        float: none;
+    }
+    section#case-study figure.figure > img {
+        width: 100%;
+    }
+    /* Footer */
+    footer {
+        padding: 3rem 1rem 2rem !important;
+    }
+    footer .columns .bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    footer .bottom p {
+        width: 100%;
+    }
+    footer .bottom .footer-grid {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}

@@ -1,6 +1,7 @@
 /*  tylerhagan.co.uk  */
 /* Var */
 @import "flat.css";
+@import "mobile.css";
 :root {
     --animation-primary: all .3s cubic-bezier(.7, 0, .3, 1);
     --bg-grey: #999d9e;
@@ -102,15 +103,15 @@ h5 { margin: 1.5rem 0 1rem; font-size: 1.1rem; }
 }
 .switcher { 
     position: absolute;
-    bottom: -2px;
+    bottom: 0;
     right: 180px;
-    z-index: 999;
+    z-index: 990;
 }
 #about .switcher,
 #case-study .switcher {
     top: .25rem;
     bottom: inherit;
-    z-index: 999;
+    z-index: 990;
     right: 0;
 }
 #case-study.flat .switcher,
@@ -202,7 +203,7 @@ a.link {
     background: var(--orange);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    bottom: -2px;
+    bottom: 0;
     font-size: 1rem;
     padding: 0.25rem 0.75rem 0.15rem;
     right: 0;
@@ -257,6 +258,7 @@ a.link {
 }
 
 /* Sections */
+main .container.grid-xl { padding-right: 1em; padding-left: 1rem; }
 section:not([class]) { margin-top: 3rem; }
 main {
     border-top: 1px solid transparent;
@@ -303,6 +305,7 @@ ul.breadcrumb { z-index: 99; position: relative; }
 }
 
 /** Case Study **/
+#about-me .column .heading,
 #case-study .column .heading {
     border-bottom: 1px solid var(--bg-grey);
 }
@@ -334,6 +337,7 @@ ul.breadcrumb { z-index: 99; position: relative; }
     padding: 1rem;
     color: #fff;
     margin-left: -.5rem;
+    margin-top: 0;
 }
 #case-study .overview .ui .col-12 h5 {
     margin-right: -.5rem;
@@ -440,7 +444,7 @@ a.opener:hover {
 .lightbox {
     /* Default to hidden */
     display: none;
-  
+
     /* Overlay entire screen */
     position: fixed;
     z-index: 999;
@@ -448,35 +452,26 @@ a.opener:hover {
     left: 0;
     right: 0;
     bottom: 0;
-  
+
     /* A bit of padding around image */
     padding: 1em;
-  
     /* Translucent background */
     background: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Unhide the lightbox when it's the target */
-  .lightbox:target {
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
     display: block;
-  }
+}
   
-  .lightbox div {
+.lightbox div {
     /* Full width and height */
     display: block;
     width: 100%;
     height: 100%;
-  
+
     /* Size and position background image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-  }
-
-@media (min-width: 600px) {
-.mobile { display: none; }
-}
-@media (max-width: 600px) {
-.mobile { display: block; }
-.desktop { display: none; }
 }

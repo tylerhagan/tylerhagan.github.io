@@ -83,3 +83,13 @@ body.flat .orange-block {
 body.flat .orange-block a:not(.btn) {
     color: #222;
 }
+
+body.flat header.navbar a.btn.dropdown-toggle {
+    padding: .3rem 0.5rem 0.2rem;
+    background: #fff;
+    margin-right: 1rem;
+    background: #222;
+}
+body.flat header.navbar a.btn.dropdown-toggle:focus {
+    background: var(--orange);
+}
