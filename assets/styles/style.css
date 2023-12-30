@@ -382,6 +382,7 @@ ul.breadcrumb { z-index: 99; position: relative; }
 
 /* Projects */
 .project { padding-top: 4rem; margin-top: 4rem; border-top: 1px solid var(--bg-grey) }
+#work > div > div:nth-child(2) { margin-top: 2rem; }
 .project .media { margin-top: 1rem; }
 .project .media p { margin: 1rem 0 0; }
 .project .media a { border: 5px solid #FFF; display: block; }
