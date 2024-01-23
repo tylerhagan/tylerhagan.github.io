@@ -144,8 +144,12 @@ a.link {
 
 /* Navigation */
 #top {
+    background: #f7f7f7;
     border-top: 4px solid rgba(255,255,255,.4);
     border-bottom: 4px solid rgba(0,0,0,.4);
+}
+.backdrop {
+    background: #111;
 }
 .navbar .logo { height: 62px; filter: drop-shadow( 2px 2px 0px rgba(255, 255, 255, .4)); }
 .top .column { padding: 1.5rem 0; }
@@ -179,7 +183,6 @@ a.link {
  }
 
 .header {
-    background: #121111;
     position: relative;
     box-shadow: inset 0 3px 5px 2px rgb(0 0 0 / 78%), 0 3px 6px 3px rgb(0 0 0 / 60%);
     border-bottom: 2px solid rgba(0,0,0,.4);
@@ -482,4 +485,4 @@ a.opener:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-}
+}  
