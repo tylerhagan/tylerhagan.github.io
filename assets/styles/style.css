@@ -118,7 +118,9 @@ h5 { margin: 1.5rem 0 1rem; font-size: 1.1rem; }
 #about.flat .switcher {
     top: .5rem;
 }
-.bordered { border: 5px solid #fff; }
+.bordered { border: 5px solid #fff; transition: all .3s ease-in-out; border-radius: 15px; }
+.bordered > img { border-radius: 12px; }
+.bordered:hover { transform: scale(1.025); transition: all .3s ease-in-out; }
 ul.unstyled { list-style: none; margin-left: 0; }
 ul.unstyled li { margin-top: 0.1rem; }
 dl { font-size: 1rem; }
@@ -299,6 +301,7 @@ ul.breadcrumb { z-index: 99; position: relative; }
     align-items: center;
     margin-bottom: .8rem;
     border: 5px solid #ccc;
+    border-radius: 12px;
 }
 
 #brands .card .card-image {
@@ -385,10 +388,13 @@ ul.breadcrumb { z-index: 99; position: relative; }
 #work > div > div:nth-child(2) { margin-top: 2rem; }
 .project .media { margin-top: 1rem; }
 .project .media p { margin: 1rem 0 0; }
-.project .media a { border: 5px solid #FFF; display: block; }
-.project .media > img { border: 5px solid #fff; }
+.project .media a { border: 5px solid #FFF; display: block; border-radius: 15px; }
+.project .media a > img { border-radius: 13px; }
+.project .media > img { border: 5px solid #fff; transition: all .3s ease-in-out; border-radius: 15px;  }
+.project .media > img:hover { transform: scale(1.025); transition: all .3s ease-in-out; }
 .project .media a:hover {
     box-shadow: 8px 8px 0 0 var(--orange);
+    transform: scale(1.025); transition: all .2s ease-in-out;
 }
 .project .media-info { display: flex; margin-top: 1rem; justify-content: end; }
 .project .media-info span { border: 1px solid var(--dark-blue); width: -moz-fit-content; width: fit-content; padding: .15rem 1rem; }
