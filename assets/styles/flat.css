@@ -27,6 +27,11 @@ body.flat #top .navbar {
 body.flat #top .navbar .logo {
     filter: none;
 }
+body.flat .switcher {
+    color: #c7d3ea;
+    box-shadow: inset 0 0 0 1px rgba(186,214,247,.06);
+    background: rgb(18 23 40);
+}
 body.flat .navbar a.btn {
     border-radius: 30px;
     padding: 0.5rem 0.8rem;
