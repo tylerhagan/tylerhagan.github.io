@@ -3,7 +3,7 @@ body.flat {
     background-image: none;
 }
 body.flat .backdrop {
-    background: #05060f;
+    background: var(--dark-blue);
 }
 body.flat .backdrop::after {
     content: "";
@@ -134,6 +134,10 @@ body.flat header.navbar a.btn.dropdown-toggle {
 }
 body.flat header.navbar a.btn.dropdown-toggle:focus {
     background: var(--orange);
+}
+
+body.flat footer.bg-dark {
+    background: var(--dark-blue)!important;
 }
 
 /* Stars */

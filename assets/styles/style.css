@@ -6,7 +6,7 @@
     --animation-primary: all .3s cubic-bezier(.7, 0, .3, 1);
     --bg-grey: #999d9e;
     --petrol-blue: #5bb1db;
-    --dark-blue: #303742;
+    --dark-blue: #05060f;
     --orange: #fc3b0f;
 }
 html { background: #e2dedc; scroll-behavior: smooth; }
