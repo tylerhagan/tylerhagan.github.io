@@ -151,7 +151,7 @@ a.link {
 .backdrop {
     background: #111;
 }
-.navbar .logo { height: 62px; filter: drop-shadow( 2px 2px 0px rgba(255, 255, 255, .4)); }
+.navbar .logo { height: 48px; filter: drop-shadow( 2px 2px 0px rgba(255, 255, 255, .4)); }
 .top .column { padding: 1.5rem 0; }
 .navbar a.btn {
     border-radius: 0.15rem;

@@ -19,14 +19,20 @@
         margin-top: 132px;
     }
     .header { margin-top: 139px; }
+    body.flat .top .column { padding: 0.5rem 0; }
+    body.flat #top header.navbar { padding: .5rem 1rem; margin: 0 0.5rem; }
     header.navbar .navbar-center {
-        margin-left: 1rem;
+        margin-left: .5rem;
     }
     header.navbar a.btn.dropdown-toggle {
         padding: .3rem 0.5rem 0.2rem;
         background: #fff;
         margin-right: 1rem;
         background: var(--orange);
+        border-radius: 1rem;
+    }
+    body.flat header.navbar a.btn.dropdown-toggle {
+        margin-right: 0.5rem;
     }
     header.navbar a.btn.dropdown-toggle:focus {
         background: #222;
@@ -44,7 +50,7 @@
     }
     /* Hero */
     .header .hero .hero-body { margin: 0 !important; }
-    .header .hero { padding: 3rem 0 5rem; }
+    .header .hero { padding: 1rem 0 5rem; }
     .header .hero .hero-body h1 {
         font-size: 2rem;
         margin-bottom: 2rem;
