@@ -8,6 +8,9 @@
     .desktop { display: none !important; }
     #breadcrumbs { display: none; }
     .header.border-b { border-bottom: 0; }
+    .grid-bg {
+        background-image: radial-gradient(rgb(57, 75, 102) 1px, transparent 0) !important;
+    }
     /* Navigation */
     #top {
         position: fixed;
