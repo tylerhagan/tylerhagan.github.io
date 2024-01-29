@@ -6,7 +6,8 @@
 @media (max-width: 600px) {
     .mobile { display: block !important; }
     .desktop { display: none !important; }
-
+    #breadcrumbs { display: none; }
+    .header.border-b { border-bottom: 0; }
     /* Navigation */
     #top {
         position: fixed;
@@ -18,7 +19,6 @@
     body.flat .header {
         margin-top: 132px;
     }
-    .header { margin-top: 134px; }
     body.flat .top .column { padding: 0.5rem 0; }
     body.flat #top header.navbar {
         padding: .5rem 1rem;
@@ -29,13 +29,24 @@
     header.navbar .navbar-center {
         margin-left: .5rem;
     }
+    .navbar-section.logo {
+        padding: 1rem;
+    }
+    header.navbar section.mobile { width: 100%; display: flex !important; align-items: center; justify-content: space-around; border-top: 1px solid var(--border-color); padding: 1rem; }
+    body > div.top-spacer.border-b > div > div > div > div > div.navbar-section.border-r { padding: 0 1rem; }
+    .navbar-section.mobile { display: flex !important; align-items: center; justify-content: center; width: 150px; }
     header.navbar a.btn.dropdown-toggle {
         padding: .3rem 0.5rem 0.2rem;
         background: #fff;
         margin-right: 1rem;
         background: var(--orange);
         border-radius: 1rem;
+        height: auto;
     }
+    /* header > section.navbar-section.logo.padding-lg.border-r.column.col-8.p-relative > a > img { display: none; } */
+    header > section.navbar-section.logo.padding-lg.border-r.column.col-8.p-relative > a > span { font-size: 2rem; }
+    .navbar-section.mobile { overflow: visible; }
+    header.navbar .greeting { display: none; }
     body.flat header.navbar a.btn.dropdown-toggle {
         margin-right: 0.5rem;
     }
@@ -95,6 +106,8 @@
     section#case-study .columns.section .col-3 {
         width: 100%;
     }
+    #case-study p.introduction { margin-bottom: 0; }
+    #case-study .col-4 h3 { padding: 0 0 1rem; }
     section#case-study .columns.section .col-3 .heading { margin-top: 2rem; }
     section#case-study .column.col-12 > .columns > .column { width: 100%; }
     section#case-study .overview { padding: .5rem; }
@@ -123,9 +136,6 @@
         width: 100%;
     }
     /* Footer */
-    footer {
-        padding: 3rem 1rem 2rem !important;
-    }
     footer .columns .bottom {
         flex-direction: column;
         align-items: flex-start;
