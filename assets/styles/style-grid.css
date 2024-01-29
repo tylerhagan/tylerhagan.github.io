@@ -141,6 +141,7 @@ h3 { color: #fff; padding: 2rem 0; font-size: 2.25rem; font-weight: 800; }
     background-image: radial-gradient(rgb(86 107 139) 1px, transparent 0);
     background-size: .75em .75em;
     background-position: -8% -12%;
+    color: rgb(147, 167, 194);
 }
 /* nav */
 .logo a {
