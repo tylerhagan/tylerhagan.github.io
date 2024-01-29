@@ -88,6 +88,7 @@
     /* Projects */
     #work .section-header > div.text-small.text-right { display: none; }
     #work .project .columns .column { width: 100%; }
+    #work .project .columns .column .media-info { display: none; }
     #work .project .columns .column .media-info.text-right {
         text-align: left;
     }
