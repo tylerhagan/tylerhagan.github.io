@@ -64,6 +64,19 @@ h3 { color: #fff; padding: 2rem 0; font-size: 2.25rem; font-weight: 800; }
     border-color: var(--orange) transparent;
     z-index: -1;
 }
+/* Utility */
+.navbar-section a[href^="http"]::after,
+.navbar-section a[href^="https://"]::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  background-image: url("../img/icon-external-white.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+}
 /* layout */
 /* some movement */
 .enter-in {
@@ -168,6 +181,26 @@ section.mobile a.btn.btn-link {
 }
 ul.breadcrumb { padding: 0.75rem 1.5rem; }
 .breadcrumb .breadcrumb-item:not(:last-child) a { color: var(--petrol-blue); }
+/* cards */
+.design-system.card {
+    border-radius: .4rem;
+    background:rgb(5, 6, 8) url(../img/forge-bg.png) no-repeat 112% 104%;
+    border: 1px solid var(--border-color);
+    color: rgb(119 129 143);
+    padding: .75rem .5rem;
+}
+.design-system.card h4 { color: #fff; width: 100%; }
+.design-system.card .btn {
+    background: radial-gradient(31.2% 40.91% at 50% 151.14%,rgba(186,214,247,.08) 0,rgba(186,214,247,0) 100%),rgba(186,214,247,.06);
+    box-shadow: inset 0 0 0 1px rgba(186,215,247,.12);
+    border: 0;
+    border-radius: 5px;
+    padding: 0.3rem 0.65rem;
+}
+.design-system.card .btn:hover {
+    box-shadow: inset 0 0 0 1px rgba(186,215,247,.25), 0 0 3px 1px rgba(29, 120, 216, 0.288);
+}
+.design-system.card .btn span { vertical-align: text-top; line-height: 16px; }
 /* imagery */
 .img-container {
     box-shadow: 2px 3px 0px 3px rgba(0,0,0,.4);
@@ -220,7 +253,8 @@ figure.figure figcaption {
 }
 /* intro */
 .header p b { color: #fff; }
-.grid-bg h5 { margin-bottom: 2rem; }
+.grid-bg h5 { margin-bottom: 1rem; }
+.grid-bg h5:nth-last-of-type(1) { margin-top: 1.5rem; }
 .employ dt {
     color: #fff;
 }
@@ -248,7 +282,6 @@ figure.figure figcaption {
     overflow: hidden;
 }
 .project .media a {
-    border: 4px solid var(--orange);
     display: block;
     border-radius: 1rem;
     overflow: hidden;
@@ -270,13 +303,13 @@ figure.figure figcaption {
 .project p strong {
     color: #96b8e6;
 }
-.project .chip {
+.chip {
     background: rgb(33, 46, 63);
     color: #96b8e6;
-    border-radius: 0;
+    border-radius: 3px;
     padding: 0.5rem 0.4rem;
 }
-.project .chip .avatar {
+.chip .avatar {
     border-radius: 0;
     padding-left: .3rem;
     background: rgb(4, 9, 17);
