@@ -22,6 +22,12 @@
     body.flat .header {
         margin-top: 132px;
     }
+    #home .header {
+        padding: 4vh 1rem 8vh;
+    }
+    #home .header h2 {
+        font-size: 2.4rem;
+    }
     body.flat .top .column { padding: 0.5rem 0; }
     body.flat #top header.navbar {
         padding: .5rem 1rem;
@@ -37,9 +43,8 @@
         justify-content: space-between;
     }
     .navbar .navbar-section:not(:first-child):last-child {
-
-        justify-content: space-between;
-        margin: 0 1rem;
+        justify-content: space-around;
+        flex-basis: 100%;
     }
     header.navbar section.mobile { width: 100%; display: flex !important; align-items: center; justify-content: space-around; border-top: 1px solid var(--border-color); padding: 1rem; }
     body > div.top-spacer.border-b > div > div > div > div > div.navbar-section.border-r { padding: 0 1rem; }
@@ -101,15 +106,42 @@
     #work .project .columns .column .media-info.text-right {
         text-align: left;
     }
+    .project .media > a.opener { margin: 1rem 0 0 !important; }
     /* Brands */
     #brands .columns .column.col-3 { width: 50%; }
-
+    #concepts > div > div > div:nth-child(2) > a,
+    #concepts > div > div > div:nth-child(3) > a,
+    #concepts > div > div > div:nth-child(4) > a {
+        margin: 0 !important;
+    }
+    #concepts .card-system {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+    #concepts .card-system h4 {
+        font-size: 1.3rem;
+    }
+    #concepts .card-system span.forge {
+        display: block;
+    }
+    #concepts .card-system p {
+        display: none;
+    }
     /* About */
     #about-me .columns .column {
         width: 100%;
     }
     #about-me .columns .column.col-5 {
         margin-bottom: 1.5rem;
+    }
+    #case-study > div:nth-child(1) > div.container.grid-lg.border-b {
+        padding: 0 1rem;
+    }
+    #case-study h4 {
+        margin: 2rem 0 1rem !important;
+    }
+    #case-study .heading {
+        margin-top: 2rem;
     }
     /* Case Study */
     section#case-study .columns.section .col-9,
