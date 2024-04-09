@@ -257,10 +257,14 @@ a.opener:hover {
     background-size: contain;
 }
 /* Header Animation */
+.header .text {
+    word-break: break-word;
+}
 .text-change {
     display: inline-block;
     vertical-align: top;
     margin: 0;
+    min-width: 300px;
 }
 
 .word {
