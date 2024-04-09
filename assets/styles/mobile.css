@@ -34,6 +34,12 @@
     }
     .navbar-section.logo {
         padding: 1rem;
+        justify-content: space-between;
+    }
+    .navbar .navbar-section:not(:first-child):last-child {
+
+        justify-content: space-between;
+        margin: 0 1rem;
     }
     header.navbar section.mobile { width: 100%; display: flex !important; align-items: center; justify-content: space-around; border-top: 1px solid var(--border-color); padding: 1rem; }
     body > div.top-spacer.border-b > div > div > div > div > div.navbar-section.border-r { padding: 0 1rem; }

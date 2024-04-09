@@ -7,43 +7,29 @@
         <meta name="theme-color" content="#303742" />
         <title>Tyler Hagan | Case Study</title>
         <link rel="stylesheet" href="assets/styles/spectre.min.css">
-        <link rel="stylesheet" href="assets/styles/style-grid.css">
+        <link rel="stylesheet" href="assets/styles/style-clean.css">
     </head>
     <body>
-        <div class="top-spacer border-b">
+        <div class="border-b navigation">
             <div class="container grid-xl">
-                <div class="columns"><div class="column col-12"><div class="navbar"><div class="navbar-section border-r"> </div><div class="navbar-section"> </div></div></div></div>
+                <header class="navbar columns">
+                    <section class="navbar-section logo column">
+                        <a href="/" class="enter-in">
+                            <span>Tyler Hagan<br />Product Design</span>
+                        </a>
+                        <ul class="externals">
+                            <li><a class="rotate-in" href="assets/tylerhagan-cv-2024.pdf" title="CV PDF" target="_blank" rel="nofollow noopener" class="btn btn-link">CV</a></li>
+                            <li><a class="rotate-in" href="https://www.linkedin.com/in/tylerhagan/" title="LinkedIn Profile" target="_blank" rel="nofollow noopener">LinkedIn</a></li>
+                        </ul>  
+                    </section>
+                    <section class="navbar-section items">
+                        <a href="#work" class="btn btn-link rotate-in" title="Recent Commercial Work">Work</a>
+                        <a href="about" class="btn btn-link rotate-in" title="A little about Tyler">About</a>
+                    </section>
+                </header>
             </div>
         </div>
         <div class="border-b">
-            <div class="container grid-xl">
-                <div class="columns">
-                    <div class="column col-12">
-                        <header class="navbar columns">
-                            <section class="navbar-section logo padding-lg border-r column col-lg-10 col-sm-12 p-relative">
-                                <a href="/" class="enter-in">
-                                    <img src="assets/img/th-logomark-light.svg" class="logo" id="logo" width="64" alt="Tyler Hagan" title="Tyler Hagan / Home"> <span>Tyler Hagan.</span>
-                                </a>
-                                <div class="greeting fade-in-greeting"></div>
-                            </section>
-                            <section class="mobile">
-                                <a href="index#work" class="btn btn-link rotate-in" title="Recent Commercial Work">Work</a>
-                                <a href="about" class="btn btn-link rotate-in" title="A little about Tyler">About</a>
-                                <a class="btn btn-link rotate-in" href="https://www.linkedin.com/in/tylerhagan/" title="LinkedIn Profile" target="_blank" rel="nofollow noopener">LinkedIn</a>
-                                <a class="btn btn-link rotate-in" href="assets/tylerhagan-cv-2024.pdf" title="CV PDF" target="_blank" rel="nofollow noopener" class="btn btn-link">CV</a>
-                            </section>
-                            <section class="navbar-section desktop fade-bg">
-                                <a href="index#work" class="btn btn-link rotate-in" title="Recent Commercial Work">Work</a>
-                                <a href="about" class="btn btn-link rotate-in" title="A little about Tyler">About</a>
-                                <a class="btn btn-link rotate-in" href="https://www.linkedin.com/in/tylerhagan/" title="LinkedIn Profile" target="_blank" rel="nofollow noopener">LinkedIn</a>
-                                <a class="btn btn-link rotate-in" href="assets/tylerhagan-cv-2024.pdf" title="CV PDF" target="_blank" rel="nofollow noopener" class="btn btn-link">CV</a>
-                            </section>
-                        </header>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="header border-b">
             <div class="container grid-xl">
                 <section id="breadcrumbs">
                     <div class="columns">
@@ -64,7 +50,7 @@
         <main>
         <section id="case-study"  class="border-b">
             <div class="border-b">
-                <div class="container grid-xl border-b">
+                <div class="container grid-lg border-b">
                     <div class="columns section">
                         <div class="column col-8 padding-m col-sm-12">
                             <div class="heading">
@@ -282,28 +268,14 @@
                             <li><strong>Operational Efficiency:</strong> The primary focus was on streamlining internal processes related to installation tracking, performance monitoring, and customer management to improve overall operational efficiency.</li>
                             <li><strong>Cost Reduction:</strong> By automating manual tasks and optimising workflows, the application aimed to reduce operational costs associated with inefficiencies and errors.</li>
                             <li><strong>Data Accuracy Improvement:</strong> Accurate data entry and management were crucial for ensuring the reliability of system performance metrics and customer information. The new application incorporated validation checks and guided flows to minimise errors and discrepancies.</li>
-                            <li><strong>Enhanced Experience:</strong> We recognised the importance of providing a seamless experience for users throughout the installation process. The application integrated features for real-time system monitoring, appointment scheduling, and communication to enhance the overall customer experience.</li>
                         </ol>
                         <p><div class="chip">Note:</div> I am only able to show a few concepts and prototype screens as this application is in active internal usage.</p>
                         <figure class="figure text-center">
                             <img src="assets/img/field-service/preview-one.png" alt="Navigation and Dashboard" loading="lazy" class="img-responsive bordered" srcset="assets/img/field-service/preview-one.png 1x, assets/img/field-service/2x/preview-one.png 2x" />
                         </figure>
-                        <h4>Approach</h4>
-                            <p>We conducted user research and stakeholder interviews to gain insights into the specific needs and pain points of the installers and operations. This informed the design process, ensuring that the application addressed user needs effectively.</p>
-                            <p>The information architecture was mapped out to assist in communication with development and stakeholders.</p>
-                            <p>Rapid prototyping techniques were utilised to visualise the application's interface and functionality early in the development process. Continuous iteration based on user feedback allowed us to refine the design and improve usability iteratively.</p>
-                            <p>To streamline collaboration between design and development teams, we implemented design tokens and modular components. This standardised design elements and expedited the development process, ensuring consistency across the application.</p>
                         <figure class="figure text-center">
                             <img src="assets/img/field-service/preview-two.png" alt="Installation Checks and Photo Upload" loading="lazy" class="img-responsive bordered" srcset="assets/img/field-service/preview-two.png 1x, assets/img/field-service/2x/preview-two.png 2x" />
                         </figure>
-                        <h4>Outcome</h4>
-                        <p>The successful implementation of the new application resulted in significant outcomes.</p>
-                        <ol>
-                            <li><strong>Operational Efficiency:</strong> The streamlined processes and automation led to a 35% increase in operational efficiency, allowing the company to handle a higher volume of installations without compromising quality.</li>
-                            <li><strong>Cost Savings:</strong> By reducing manual intervention and errors, the application resulted in a 20% reduction in operational costs, contributing to improved profitability for the company.</li>
-                            <li><strong>Data Accuracy:</strong> The implementation of validation checks and intuitive interfaces improved data accuracy by 95%, ensuring reliable performance metrics and customer information.</li>
-                            <li><strong>Enhanced Experience:</strong> The application's features for material overviews, appointment management, and communication improved the overall experience, leading to higher satisfaction rates and increased referrals.</li>
-                        </ol>
                         <figure class="figure text-center">
                             <img src="assets/img/field-service/preview-three.png" alt="Preparation Checklist and Reports" loading="lazy" class="img-responsive bordered" srcset="assets/img/field-service/preview-three.png 1x, assets/img/field-service/2x/preview-three.png 2x" />
                         </figure>
@@ -323,8 +295,7 @@
         <footer>
             <div class="container grid-xl">
                 <div class="columns padding-m">
-                    <div class="column col-12"><a href="#top"><img src="assets/img/th-logomark-light.svg" class="logo" alt="Tyler Hagan"></a></div>
-                    <div class="column col-12"><h4>Thanks for visiting</h4></div>
+                    <div class="column col-12"><a href="#top" class="footer-logo"><img src="assets/img/th-logomark-light.svg" class="logo" alt="Tyler Hagan"></a></div>
                     <div class="column col-4 bottom">
                         <p>Made with <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5bb1db" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></g></svg> by me
                         <br />&copy; 2024 Tyler Hagan. All rights reserved.</p>
@@ -337,24 +308,6 @@
                 </div>
             </div>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-        <script type="text/javascript">
-            /* little welcome message */
-            var thehours = new Date().getHours();
-            var themessage;
-            var morning = ('Good morning!');
-            var afternoon = ('Good afternoon!');
-            var evening = ('Good evening!');
-    
-            if (thehours >= 0 && thehours < 12) {
-                themessage = morning; 
-            } else if (thehours >= 12 && thehours < 17) {
-                themessage = afternoon;
-            } else if (thehours >= 17 && thehours < 24) {
-                themessage = evening;
-            }
-            $('.greeting').append(themessage);
-        </script>
         <a href="#!" class="lightbox" id="journey-map" title="Journey Map">
             <div style="background-image:url('assets/img/field-service/journey-map.png')"></div>
         </a>
