@@ -376,9 +376,9 @@ a.opener:hover {
     height: 100%;
 }
 .img-container .inner .image-icon {
-    bottom: .25rem;
+    top: .5rem;
     position: absolute;
-    left: .25rem;
+    left: .5rem;
     opacity: 0.8;
 }
 /* Case Study */
