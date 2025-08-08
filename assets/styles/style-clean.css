@@ -538,3 +538,6 @@ figure figcaption {
 #case-study .overview .ui .columns .column strong {
     display: block;
 }
+/* offer tool */
+.results .card { text-align: center; padding-top: 2.5rem; }
+.results .card strong.value { font-weight: 800; font-size: 2.5rem; }
